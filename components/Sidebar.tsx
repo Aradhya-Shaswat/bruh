@@ -39,6 +39,16 @@ const Sidebar: NextPage = () => {
                 </span>
               </div>
             </Link>
+            <Link href='https://community.friendbase.tech/'>
+              <div className='flex items-center gap-3 hover:bg-primary p-3 justify-center xl:justify-start cursor-pointer font-semibold text-[#f51997] rounded'>
+                <p className='text-2xl'>
+                  <AiFillWechat />
+                </p>
+                <span className='text-xl hidden xl:block'>
+                    Community
+                </span>
+              </div>
+            </Link>
           </div>
           
           <Discover />
