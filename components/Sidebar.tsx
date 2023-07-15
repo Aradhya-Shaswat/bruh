@@ -40,7 +40,7 @@ const Sidebar: NextPage = () => {
               </div>
             </Link>
             <Link href='/community'>
-              <div className='flex items-center gap-3 hover:bg-primary p-3 justify-center xl:justify-start cursor-pointer font-semibold text-[#f51997] rounded'>
+              <div className={pathname === '/community' ? activeLink : normalLink}}>
                 <p className='text-2xl'>
                   <AiFillWechat />
                 </p>
