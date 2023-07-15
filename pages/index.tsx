@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Head from 'next/head';
 
 import VideoCard from '../components/VideoCard';
 import { BASE_URL } from '../utils';
