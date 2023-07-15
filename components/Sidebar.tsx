@@ -9,13 +9,13 @@ import SuggestedAccounts from './SuggestedAccounts';
 import Discover from './Discover';
 import Footer from './Footer';
 import useAuthStore from '../store/authStore';
+
 const Sidebar: NextPage = () => {
   const [showSidebar, setShowSidebar] = useState<Boolean>(true);
   const { pathname } = useRouter();
   const { fetchAllUsers, allUsers }: any = useAuthStore();
 
   const activeLink = 'flex items-center gap-3 hover:bg-primary p-3 justify-center xl:justify-start cursor-pointer font-semibold text-[#F51997] rounded';
-
   const normalLink = 'flex items-center gap-3 hover:bg-primary p-3 justify-center xl:justify-start cursor-pointer font-semibold rounded';
 
   return (
@@ -40,12 +40,12 @@ const Sidebar: NextPage = () => {
               </div>
             </Link>
             <Link href='/community'>
-              <div className={pathname === '/community' ? activeLink : normalLink}}>
+              <div className={pathname === '/community' ? activeLink : normalLink}>
                 <p className='text-2xl'>
                   <AiFillWechat />
                 </p>
                 <span className='text-xl hidden xl:block'>
-                    Community
+                  Community
                 </span>
               </div>
             </Link>
