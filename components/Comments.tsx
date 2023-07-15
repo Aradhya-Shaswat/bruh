@@ -65,7 +65,7 @@ const Comments = ({ comment, setComment, addComment, comments, isPostingComment 
             </>
           ))
         ) : (
-          <NoResults text='No Comments Yet! Be First to do add the comment.' />
+          <NoResults text='No Comments Yet!' />
         )}
       </div>
      {userProfile && <div className='absolute bottom-0 left-0  pb-6 px-2 md:px-10 '>
