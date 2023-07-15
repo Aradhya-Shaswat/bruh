@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { GoVerified } from 'react-icons/go';
 import Link from 'next/link';
 import axios from 'axios';
+import Head from 'next/head';
 
 import NoResults from '../../components/NoResults';
 import VideoCard from '../../components/VideoCard';
@@ -24,6 +25,9 @@ const Search = ({ videos }: { videos: Video[] }) => {
   
   return (
     <div className='w-full  '>
+      <Head>
+        <title>Search</title>
+      </Head>
       <div className='flex gap-10 mb-10 border-b-2 border-gray-200 md:fixed z-50 bg-white w-full'>
         <p onClick={() => setIsAccounts(true)} className={`text-xl  font-semibold cursor-pointer ${accounts} mt-2`}>
           Accounts
