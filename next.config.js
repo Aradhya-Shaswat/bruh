@@ -9,6 +9,7 @@ const nextConfig = {
       'image.shutterstock.com',
       'media.discordapp.net',
       'instagram.fpat2-3.fna.fbcdn.net',
+      'external.xx.fbcdn.net',
     ],
   },
 };
