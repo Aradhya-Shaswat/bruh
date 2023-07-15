@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { GoVerified } from 'react-icons/go';
 import axios from 'axios';
+import Head from 'next/head';
 
 import VideoCard from '../../components/VideoCard';
 import NoResults from '../../components/NoResults';
@@ -38,6 +39,9 @@ const Profile = ({ data }: IProps) => {
 
   return (
     <div className='w-full'>
+      <Head>
+        <title>Profile</title>
+      </Head>
       <div className='flex gap-6 md:gap-10 mb-4 bg-white w-full'>
         <div className='w-16 h-16 md:w-32 md:h-32'>
           <Image
