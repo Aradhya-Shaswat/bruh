@@ -56,7 +56,7 @@ const Sidebar: NextPage = () => {
                   <MdSettingsSuggest />
                 </p>
                 <span className='text-xl hidden xl:block'>
-                  Survery!
+                  Survey!
                 </span>
               </div>
             </Link>
