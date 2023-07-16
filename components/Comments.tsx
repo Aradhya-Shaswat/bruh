@@ -65,7 +65,7 @@ const Comments = ({ comment, setComment, addComment, comments, isPostingComment 
             </>
           ))
         ) : (
-          <NoResults text='No Comments Yet!' />
+          <NoResults text='No Comments!' />
         )}
       </div>
      {userProfile && <div className='absolute bottom-0 left-0  pb-6 px-2 md:px-10 '>
