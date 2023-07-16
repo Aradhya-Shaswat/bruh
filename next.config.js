@@ -11,6 +11,7 @@ const nextConfig = {
       'instagram.fpat2-3.fna.fbcdn.net',
       'external.xx.fbcdn.net',
       'encrypted-tbn0.gstatic.com',
+      'cdn.discordapp.com',
     ],
   },
 };
