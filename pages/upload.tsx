@@ -94,7 +94,7 @@ const Upload = () => {
         <div>
           <div>
             <p className='text-2xl font-bold'>Upload Video</p>
-            <p className='text-md text-gray-400 mt-1'>Post a video to your account</p>
+            <p className='text-md text-gray-400 mt-1'>Post a video to Friendbase</p>
           </div>
           <div className=' border-dashed rounded-xl border-4 border-gray-200 flex flex-col justify-center items-center  outline-none mt-10 w-[260px] h-[458px] p-10 cursor-pointer hover:border-red-300 hover:bg-gray-100'>
             {loading ? (
@@ -119,7 +119,7 @@ const Upload = () => {
                         MP4 or WebM or ogg <br />
                         720x1280 resolution or higher <br />
                         Up to 10 minutes <br />
-                        Less than 2 GB
+                        Less than 1 GB
                       </p>
                       <p className='bg-[#F51997] text-center mt-8 rounded text-white text-md font-medium p-2 w-52 outline-none'>
                         Select file
