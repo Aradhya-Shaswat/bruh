@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { AiFillHome, AiOutlineMenu, AiFillWechat } from 'react-icons/ai';
+import { AiFillHome, AiOutlineMenu, AiFillWechat } from 'react-icons/md';
+import { MdSettingsSuggest } from 'react-icons/ai';
 import { ImCancelCircle } from 'react-icons/im';
 
 import SuggestedAccounts from './SuggestedAccounts';
@@ -46,6 +47,16 @@ const Sidebar: NextPage = () => {
                 </p>
                 <span className='text-xl hidden xl:block'>
                   Community
+                </span>
+              </div>
+            </Link>
+            <Link href='https://discord.gg/NvnJ9JURR'>
+              <div className={pathname === 'https://discord.gg/NvnJ9JURR' ? activeLink : normalLink}>
+                <p className='text-2xl'>
+                  <MdSettingsSuggest />
+                </p>
+                <span className='text-xl hidden xl:block'>
+                  Survery!
                 </span>
               </div>
             </Link>
