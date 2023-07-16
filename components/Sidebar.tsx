@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import { AiFillHome, AiOutlineMenu, AiFillWechat } from 'react-icons/md';
-import { MdSettingsSuggest } from 'react-icons/ai';
+import { AiFillHome, AiOutlineMenu, AiFillWechat } from 'react-icons/ai';
+import { MdSettingsSuggest } from 'react-icons/md';
 import { ImCancelCircle } from 'react-icons/im';
 
 import SuggestedAccounts from './SuggestedAccounts';
