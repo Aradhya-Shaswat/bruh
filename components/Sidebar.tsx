@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { AiFillHome, AiOutlineMenu, AiFillWechat } from 'react-icons/ai';
 import { MdSettingsSuggest } from 'react-icons/md';
 import { ImCancelCircle } from 'react-icons/im';
+import { FaDonate } from 'react-icons/fa';
 
 import SuggestedAccounts from './SuggestedAccounts';
 import Discover from './Discover';
@@ -57,6 +58,16 @@ const Sidebar: NextPage = () => {
                 </p>
                 <span className='text-xl hidden xl:block'>
                   Survey!
+                </span>
+              </div>
+            </Link>
+            <Link href='https://ko-fi.com/friendbase'>
+              <div className={pathname === 'https://ko-fi.com/friendbase' ? activeLink : normalLink}>
+                <p className='text-2xl'>
+                  <FaDonate />
+                </p>
+                <span className='text-xl hidden xl:block'>
+                  Support Friendbase
                 </span>
               </div>
             </Link>
