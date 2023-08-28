@@ -16,6 +16,14 @@ const Home = ({ videos }: IProps) => {
     <div className='flex flex-col gap-10 videos h-full'>
       <Head>
         <title>Friendbase.</title>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJT8QX90VQ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-KJT8QX90VQ');
+        </script>
       </Head>
       {videos.length 
         ? videos?.map((video: Video) => (
